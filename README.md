@@ -5,7 +5,7 @@ API REST para la creación y obtención de usuarios usando NestJS, TypeORM y Pos
 ## Requisitos previos
 
 - Docker (https://www.docker.com/ )
-- Node.js (v16 o superior) (https://nodejs.org/ )
+- Node.js (LTS reciente) (https://nodejs.org/ )
 - npm (https://www.npmjs.com/ )
 
 ## Iniciar el Proyecto
@@ -15,19 +15,21 @@ API REST para la creación y obtención de usuarios usando NestJS, TypeORM y Pos
 El proyecto ya incluye un archivo .env, no es necesario una configuracion adicional.
 
 Ejecuta el siguiente comando para levantar PostgreSQL:
-
+```
 docker-compose up -d
-
-Esto iniciará una instancia de PostgreSQL con los datos iniciales definidos en ./docker/db/entrypoint.sql.
-
+```
+Esto iniciará una instancia de PostgreSQL con los datos iniciales definidos en 
+```
+./docker/db/entrypoint.sql.
+```
 ### 2. Instalar dependencias
-
+```
 npm install
-
+```
 ### 3. Ejecutar la aplicación en modo desarrollo
-
+```
 npm run start:dev
-
+```
 La API estará disponible en: http://localhost:3000
 
 ## Endpoints Disponibles
